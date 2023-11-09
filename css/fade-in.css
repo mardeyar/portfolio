@@ -1,0 +1,27 @@
+.container section#about-me {
+    opacity: 0;
+    /* transform: translateY(-100%); */
+    transition: opacity .3s, transform .2s;
+}
+
+.container section#about-me.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.container section#about-me.fade-out {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity .3s, transform .2s;
+}
+
+.container section#tech {
+    opacity: 0;
+    /* transform: translateX(100%); */
+    transition: opacity .3s, transform .2s;
+}
+
+.container section#tech.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
