@@ -3,11 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fade-in.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image" href="./img/icons/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500&family=Paytone+One&Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <script defer src="./js/index.js"></script>
     <title>Home</title>
 </head>
 <body>
-    <h1>This is the index page</h1>
-    <a href="landing.html">Landing</a>
+
+    <div id="nav">
+        <ul class="nav-links">
+            <a href="#about"><li>About</li></a>
+            <a href="#skills"><li>Skills</li></a>
+            <a href="#projects"><li>Projects</li></a>
+            <a href="#contact"><li>Contact</li></a>
+        </ul>
+    </div>
+
+    <div class="container">
+        <section id="about-me" class="active">
+            <img id="md" src="/img/profile/profile.png" alt="md.png">
+            <div class="about">
+                <h1>About <span>Me</span></h1>
+                <p>I am a junior <span>web and software developer</span> based in Halifax, NS. I have a passion for clean UI and elegant coding solutions. 
+                Currently enrolled in the IT Programming course through NSCC, I will graduate and be ready for full time work in May 2024</p>
+            </div>
+        </section> 
+    </div>
+   
+
 </body>
 </html>
