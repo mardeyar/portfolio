@@ -1,6 +1,7 @@
 /* BODY SECTION */
 body {
     background-color: #c5c5c5;
+    margin: 0;
 }
 
 .container {
@@ -38,21 +39,21 @@ body {
 }
 
 /* SECTION HEADER TITLE */
-.info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+
+.title {
+    margin: 0px;
 }
 
-.info h1 {
+.title h1 {
     font-family: 'Paytone One', sans-serif;
-    font-size: 120px;
+    font-size: 80px;
     margin: 0;
+    padding-left: 20px;
     text-shadow: 7px 7px 0px #454545;
+    border-left: 10px solid #2B839F;
+    border-bottom: 5px solid #2B839F;
 }
 
-.info h1 span {
+.title h1 span {
     color: #2B839F;
 }
