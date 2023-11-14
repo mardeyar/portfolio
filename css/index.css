@@ -22,6 +22,7 @@
     margin-top: 20px;
     position: relative;
     border: 1px solid rgb(150, 150, 150);
+    width: 100%;
 }
 
 /* PROFILE PICTURES */
@@ -41,7 +42,7 @@
     border-radius: 250px;
     border: 2px solid rgb(65, 65, 65);
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 4%;
 }
 
@@ -53,19 +54,20 @@
 }
 
 .name-title {
-    margin: 50px 3.2vw;
+    margin: 70px 10px 70px 3.2vw;
+    width: 525px;
 }
 
 #name {
     font-family: 'Lato', sans-serif;
-    font-size: 46px;
+    font-size: 48px;
     margin-bottom: 10px;
     font-weight: 900;
 }
 
 #desc {
     font-family: 'Quicksand', sans-serif;
-    font-size: 26px;
+    font-size: 32px;
     color: rgb(223, 223, 223);
     margin-top: 0;
     margin-bottom: 0;
@@ -74,27 +76,84 @@
 
 #origin {
     font-family: 'Quicksand', sans-serif;
-    font-size: 22px;
+    font-size: 28px;
     margin-top: 10px;
     letter-spacing: .5px;
 }
 
 .wall {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin: 30px auto;
-    height: 300px;
-    width: 50%;
-    background-color: rgb(212, 212, 212, .2);
-    border: 1px solid rgb(212, 212, 212);
-    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+    justify-content: center;
+    width: 45%;
 }
 
 .wall p {
+    border-left: 5px solid rgb(49, 145, 158);
     font-family: 'Lato', sans-serif;
-    font-size: 26px;
+    font-size: 16px;
     font-weight: 200;
-    text-align: center;
-    padding: 30px;
+    padding: 10px;
+}
+
+#top {
+    font-size: 22px;
+    width: 80%;
+    margin: 5px 0;
+}
+
+#bottom {
+    font-size: 16px;
+    width: 80%;
+    margin: 5px 0 20px 0;
+}
+
+@media screen and (max-width: 1100px) {
+    .profile-body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .name-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    #name {
+        font-size: 32px;
+    }
+
+    #desc {
+        font-size: 28px;
+    }
+
+    .profile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #md {
+        top: 70%;
+        left: auto;
+        width: 150px;
+        height: 150px;
+    }
+
+    .wall {
+        width: 90%;
+        margin: auto;
+    }
+
+    #top {
+        font-size: 18px;
+    }
+
+    #bottom {
+        font-size: 13px;
+    }
 }

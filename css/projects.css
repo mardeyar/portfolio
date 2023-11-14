@@ -32,10 +32,10 @@
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.25);
     border-radius: 4px;
     overflow: hidden;
-    transition: transform 0.5s, filter 0.5s, opacity 0.5s, box-shadow 0.5s, height 6.5s;
+    /* transition: transform 0.5s, filter 0.5s, opacity 0.5s, box-shadow 0.5s, height 6.5s; */
 }
 
-.work-box p:not(:first-child) {
+.work-box p:not(#title) {
     display: none;
 }
 
@@ -44,7 +44,7 @@
 }
 
 /* HOVER EFFECT FOR PROJECT CARDS */
-.box-container:hover .work-box {
+/* .box-container:hover .work-box {
     filter: blur(3px);
     opacity: 0.5;
     transform: scale(.98);
@@ -66,4 +66,4 @@
 
 .box-container:hover .work-box:hover a {
     display: inline-block;
-}
+} */
