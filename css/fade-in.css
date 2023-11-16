@@ -1,27 +1,67 @@
-.container section#about-me {
+.container section#index {
     opacity: 0;
-    /* transform: translateY(-100%); */
-    transition: opacity .3s, transform .2s;
+    transform: translateY(-100%);
+    transition: opacity .3s, transform .3s;
 }
 
-.container section#about-me.fade-in {
+.container section#index.fade-in {
     opacity: 1;
     transform: translateY(0);
 }
 
-.container section#about-me.fade-out {
+.container section#index.fade-out {
     opacity: 0;
     transform: translateY(100%);
-    transition: opacity .3s, transform .2s;
+    transition: opacity .3s, transform .3s;
 }
 
 .container section#tech {
     opacity: 0;
-    /* transform: translateX(100%); */
-    transition: opacity .3s, transform .2s;
+    transform: translateY(-100%);
+    transition: opacity .3s, transform .3s;
 }
 
 .container section#tech.fade-in {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
+}
+
+.container section#tech.fade-out {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity .3s, transform .3s;
+}
+
+.container section#projects {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity .3s, transform .3s;
+}
+
+.container section#projects.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.container section#projects.fade-out {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity .3s, transform .3s;
+}
+
+.container section#contact {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity .3s, transform .3s;
+}
+
+.container section#contact.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.container section#contact.fade-out {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity .3s, transform .3s;
 }

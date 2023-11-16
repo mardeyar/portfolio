@@ -11,8 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
+    margin-top: 40px;
 }
 
 .box-container {
@@ -26,13 +25,14 @@
 .work-box {
     margin: 2%;
     padding: 30px;
-    border: 1px solid #d6d6d6;
-    width: 90%;
+    border: 1px solid #726d6d;
+    background-color: #c5c5c5;
+    width: 70%;
     height: 20%;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.25);
     border-radius: 4px;
+    margin: 10px;
     overflow: hidden;
-    /* transition: transform 0.5s, filter 0.5s, opacity 0.5s, box-shadow 0.5s, height 6.5s; */
 }
 
 .work-box p:not(#title) {
@@ -41,29 +41,79 @@
 
 .work-box a {
     display: none;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    color: #2B839F;
+    font-size: 18px;
+    font-weight: 600;
 }
 
-/* HOVER EFFECT FOR PROJECT CARDS */
-/* .box-container:hover .work-box {
-    filter: blur(3px);
-    opacity: 0.5;
-    transform: scale(.98);
-    box-shadow: none;
+.expand {
+    background-color: transparent;
+    border: transparent;
+    float: right;
+    margin: 30px 0;
+    font-size: 14px;
 }
 
-.box-container:hover .work-box:hover {
-    transform: scale(1);
-    filter: blur(0px);
-    opacity: 1;
-    box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
-    background-color: #cfcfcf;
-    height: 100%;
+.expand:hover {
+    cursor: pointer;
 }
 
-.box-container:hover .work-box:hover p:not(:first-child) {
-    display: block;
+#title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
 }
 
-.box-container:hover .work-box:hover a {
-    display: inline-block;
-} */
+#lang {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 20px;
+    border-top: 3px solid black;
+    padding-top: 20px;
+}
+
+#lang span {
+    color: #2B839F;
+    font-weight: 600;
+}
+
+#proj-info {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+}
+
+#proj-info span {
+    font-weight: 600;
+    color: #2B839F;
+}
+
+@media screen and (max-width: 811px) {
+    .work-box {
+        width: 80%;
+    }
+
+    .expand {
+        font-size: 12px;
+    }
+
+    #title {
+        font-size: 20px;
+    }
+    
+    #lang {
+        font-size: 16px;
+    }
+    
+    #proj-info {
+        font-size: 14px;
+    }
+
+    .work-box a {
+        font-size: 16px;
+    }
+}
