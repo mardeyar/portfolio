@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/universal.css">
     <link rel="icon" type="image" href="./img/icons/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500&family=Paytone+One&family=Quicksand:wght@300;400&family=Lato:wght@200;300;400;900&family=Vina+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;300;400;500&family=Paytone+One&family=Quicksand:wght@300;400&family=Lato:wght@200;300;400;900&family=Vina+Sans&display=swap" rel="stylesheet">
     
     <title>Mark Deyarmond</title>
 </head>
@@ -16,7 +16,7 @@
     <div id="nav">
         <ul class="nav-links">
             <a href="index.html"><li>About</li></a>
-            <a href="tech.html"><li>Tech Stack</li></a>
+            <a href="tech.html"><li>Skills</li></a>
             <a href="projects.html"><li>Projects</li></a>
             <a id="active-link" href="contact.html"><li>Contact</li></a>
         </ul>
@@ -28,8 +28,42 @@
                 <h1>Contact <span>Me</span></h1>
             </div>
 
+            <div class="form-container">
+                <div class="display">
+                    <p>Please reach out if you need some development assistance.<br><br>Get in touch and let's bring your ideas to life</p>
+                </div>
+                
+                <div class="form-box">
+                    <form method="POST" id="form" action="contact.php">
+                        
+                        <label for="name" id="head">Full name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name">
+
+                        <label for="email" id="head">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Enter your email">
+
+                        <label for="subject" id="head">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject">
+
+                        <label for="message" id="head">Message</label>
+                        <textarea id="message" name="message" placeholder="Type your message here..."></textarea>
+
+                        <input id="btn" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+
         </section>
 
+    </div>
+
+    <div class="footer">
+        <p>Mark Deyarmond 2023</p>
+        <div class="socials">
+            <img id="soc-logo" src="./img/icons/github.png" alt="git.png">
+            <img id="soc-logo" src="./img/icons/linkedin.png" alt="linkedin.png">
+        </div>
+        
     </div>
     
 

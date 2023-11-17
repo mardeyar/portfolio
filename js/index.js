@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         sectionOut.classList.add('fade-out');
         setTimeout(() => {
             window.location.href = link.href;
-        }, 500);
+        }, 300);
     }
 
     const sections = [aboutMeSection, skillsSection, projectSection, contactSection];
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (pathName.endsWith(section.id + '.html')) {
                 setTimeout(function() {
                     fadeIn(section);
-                }, 500);
+                }, 300);
             }
         }
     });
