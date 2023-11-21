@@ -1,6 +1,6 @@
 body {
     background-color: #c5c5c5;
-    transition: opacity 1s;
+    transition: opacity 1.5s;
 }
 
 body.fade-out {

@@ -18,6 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.classList.add('fade-out');
         setTimeout(function () {
             window.location.href = transitionLink.getAttribute('href');
-        }, 1000);
+        }, 1500);
     });
 });

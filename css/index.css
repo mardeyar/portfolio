@@ -1,5 +1,4 @@
 /* ABOUT SECTION */
-
 #index {
     display: flex;
     flex-direction: column;
@@ -109,6 +108,7 @@
     margin: 5px 0 20px 0;
 }
 
+/* MOBILE SIZING */
 @media screen and (max-width: 811px) {
     .profile-body {
         flex-direction: column;

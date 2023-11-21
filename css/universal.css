@@ -39,9 +39,12 @@ body {
 }
 
 /* SECTION HEADER TITLE */
-
 .title {
-    margin: 0px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    border-left: 20px solid #2B839F;
+    border-bottom: 5px solid #2B839F;
 }
 
 .title h1 {
@@ -50,12 +53,75 @@ body {
     margin: 0;
     padding-left: 20px;
     text-shadow: 4px 4px 0px #45454563;
-    border-left: 20px solid #2B839F;
-    border-bottom: 5px solid #2B839F;
 }
 
 .title h1 span {
     color: #2B839F;
+    margin-left: 5px;
+}
+
+/* MOBILE MENU */
+#mobile-navigation {
+    position: absolute;
+    top: 55px;
+    right: 30px;
+}
+
+.mobile-menu {
+    margin-left: auto;
+    display: none;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.line {
+    width: 100%;
+    height: 5px;
+    background-color: #000000;
+    position: absolute;
+    transition: transform .3s ease;
+    border-radius: 50px;
+}
+
+.line:nth-child(2) {
+    top: 50%;
+    transform: translateY(-58%);
+}
+
+.line:nth-child(1) {
+    top: 0;
+}
+
+.line:nth-child(3) {
+    bottom: 0;
+}
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style-type: none;
+    font-family: 'Vina Sans', sans-serif;
+    font-size: 36px;
+    background-color: #cccccc;
+    z-index: 1;
+    padding-top: 200px;
+}
+
+.mobile-nav a {
+    display: block;
+    color: #a86060;
+    text-decoration: none;
+    padding: 10px 0;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 /* FOOTER SECTION */
@@ -78,8 +144,8 @@ body {
 }
 
 #soc-logo {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
 }
 
 @media screen and (max-width: 811px) {
@@ -93,14 +159,44 @@ body {
         text-shadow: 3px 3px 0px #45454563;
     }
 
+    /* MOBILE NAV MENU */
     .nav-links {
         display: none;
     }
+
+    #active-link {
+        border-bottom: none;
+        font-size: 48px;
+    }
+
+    .mobile-menu {
+        display: block; /* Show hamburger on smaller screens */
+    }
+
+    .mobile-nav.active {
+        display: block; /* Show mobile nav when active */
+    }
+
+    .line.active:nth-child(1) {
+        opacity: 0;
+    }
+
+    .line.active:nth-child(2) {
+        transform: translateY(3px) rotate(45deg);
+    }
+
+    .line.active:nth-child(3) {
+        transform: translateY(-3px) rotate(-45deg);
+    } 
 }
 
 @media screen and (max-width: 500px) {
     .title h1 {
         font-size: 34px;
         text-shadow: 2px 2px 0px #45454563;
+    }
+
+    #mobile-navigation {
+        top: 45px;
     }
 }

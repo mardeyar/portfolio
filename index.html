@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/fade-in.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/universal.css">
     <link rel="icon" type="image" href="./img/icons/favicon.png">
@@ -22,11 +21,25 @@
         </ul>
     </div>
 
+            <div id="mobile-navigation">
+                <div class="mobile-nav">
+                    <a id="active-link" href="index.html"><li>About</li></a>
+                    <a href="tech.html"><li>Skills</li></a>
+                    <a href="projects.html"><li>Projects</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                </div>
+                <div class="mobile-menu" onclick="toggleMobileMenu()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
     <div class="container">
         <section id="index">
             <div class="title">
                 <h1>About <span>Me</span></h1>
             </div>
+
 
             <div class="about-body">
                 <div class="profile">
@@ -43,15 +56,11 @@
                         <p id="top">Turning simple concepts into functional realities using clean UI designs and elegant coding solutions.</p>
                         <p id="bottom">Currently studying IT Programming through NSCC; I will graduate and be ready for full time work in May 2024.</p>
                     </div>  
-
                 </div>
             </div>
-
         </section>
-
     </div>
     
-
    <script defer src="./js/index.js"></script>
    
 </body>
