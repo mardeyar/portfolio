@@ -73,20 +73,34 @@
     .top,
     .bottom {
         flex-direction: column;
+        width: 100%;
     }
 
     .top p,
     .bottom p {
+        font-size: 16px;
         margin: 10px auto;
     }
 
     .tech-stack {
-        width: 70%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
 
     .tech-list h3 {
-        font-size: 18px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #index {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tech-list h3 {
+        font-size: 14px;
     }
 }
