@@ -17,7 +17,7 @@
 .tech-list h3 {
     font-family: 'Lato', sans-serif;
     letter-spacing: 1px;
-    font-size: 26px;
+    font-size: 1.4em;
     font-weight: 400;
     border-left: 7px solid rgb(201, 54, 54);
     padding: 10px;
@@ -44,8 +44,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin: 50px 0 30px 0;
+    padding: 8px;
+    box-shadow: 0 2px 2px 0 black;
+    border: 1px solid rgb(126, 126, 126);
 }
 
 .top,
@@ -57,15 +59,16 @@
 
 .top p, .bottom p {
     font-family: 'Kdam Thmor Pro', sans-serif;
-    font-size: 20px;
-    width: 70%;
+    font-size: 1em;
+    width: 80%;
     margin: 10px;
-    padding: 20px;
+    padding: 8px;
     border-radius: 5px;
     text-align: center;
     color: rgb(32, 32, 32);
-    /* background-color: #c0c0c0; */
-    border: 3px solid rgb(49, 49, 49);
+    background-color: #c0c0c065;
+    border: 2px solid rgb(53, 53, 53);
+    box-shadow: 0 2px 2px 0 rgb(119, 119, 119);
     /* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5); */
 }
 
@@ -90,7 +93,6 @@
 
     .tech-list h3 {
         margin-top: 40px;
-        font-size: 16px;
     }
 }
 
@@ -102,6 +104,6 @@
     }
 
     .tech-list h3 {
-        font-size: 14px;
+        font-size: 1.2em;
     }
 }

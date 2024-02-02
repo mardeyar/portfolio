@@ -96,16 +96,15 @@
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     font-weight: 300;
-    padding: 3px 15px;
+    padding: 15px 15px;
 }
 
 #top {
-    width: 80%;
-    margin: 50px 0 0 0;
+    margin: 20px 0 0 0;
 }
 
 /* MOBILE SIZING */
-@media screen and (max-width: 811px) {
+@media screen and (max-width: 1250px) {
     .profile-body {
         flex-direction: column;
         align-items: center;
