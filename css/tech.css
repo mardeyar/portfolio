@@ -20,7 +20,7 @@
     font-size: 1.4em;
     font-weight: 400;
     border-left: 7px solid rgb(201, 54, 54);
-    padding: 10px;
+    padding: 5px 15px;
 }
 
 #line-sep {
@@ -59,7 +59,7 @@
 
 .top p, .bottom p {
     font-family: 'Kdam Thmor Pro', sans-serif;
-    font-size: 1em;
+    font-size: 1.4em;
     width: 80%;
     margin: 10px;
     padding: 8px;

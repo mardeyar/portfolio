@@ -20,7 +20,7 @@ body {
     flex-direction: column;
     list-style-type: none;
     font-family: 'Vina Sans', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding: 10px;
     width: 6rem;
 }
@@ -29,14 +29,14 @@ body {
     margin: 20px 0;
     text-decoration: none;
     color: #a86060;
-    width: 100%;
+    width: 70%;
     padding-bottom: 5px;
 }
 
 #active-link {
-    border-bottom: 3px solid #454545;
+    /* border-bottom: 3px solid #454545; */
     color: rgb(20, 132, 197);
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 /* SECTION HEADER TITLE */
