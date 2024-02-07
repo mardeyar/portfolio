@@ -17,30 +17,26 @@
 .box-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     width: 100%;
 }
 
 .work-box {
-    margin: 2%;
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
     border: 1px solid #726d6d;
     background-color: #c5c5c5;
-    width: 70%;
+    width: 50%;
     height: 20%;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.25);
     border-radius: 4px;
-    margin: 10px;
-    overflow: hidden;
-}
-
-.work-box p:not(#title) {
-    display: none;
 }
 
 .work-box a {
-    display: none;
     font-family: 'Quicksand', sans-serif;
     text-decoration: none;
     color: #2B839F;
@@ -48,44 +44,50 @@
     font-weight: 600;
 }
 
-.expand {
-    background-color: transparent;
-    font-family: 'Segoe UI', sans-serif;
-    border: transparent;
-    float: right;
-    margin: 30px 0;
-    font-size: 14px;
+#card-container {
+    display: flex;
+    padding: 0 50px;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
 }
 
-.expand:hover {
-    cursor: pointer;
+#mobile-project {
+    height: 20rem;
+    width: 10rem;
 }
 
 #title {
+    margin: 0 auto;
+    text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-size: 24px;
     font-weight: 700;
+    padding: 10px;
+    border-bottom: 3px solid black;
+    width: 80%;
 }
 
 #lang {
-    display: flex;
-    flex-direction: row;
     font-family: 'Segoe UI', sans-serif;
     font-size: 20px;
-    border-top: 3px solid black;
-    padding-top: 20px;
+    color: #2B839F;
+    font-weight: 600;
 }
 
 #lang span {
-    color: #2B839F;
-    font-weight: 600;
+    color: rgb(46, 46, 46);
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 20px;
 }
 
 #proj-info {
     display: flex;
     flex-direction: row;
     font-family: 'Segoe UI', sans-serif;
-    font-size: 16px;
+    font-size: 13px;
+    width: 100%;
+    color: rgb(31, 31, 31);
 }
 
 #proj-info span {
