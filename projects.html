@@ -12,91 +12,178 @@
 </head>
 <body>
 
-    <div id="nav">
-        <ul class="nav-links">
-            <a href="index.html"><li>About</li></a>
-            <a href="tech.html"><li>Skills</li></a>
-            <a id="active-link" href="projects.html"><li>Projects</li></a>
-            <a href="contact.html"><li>Contact</li></a>
-        </ul>
-    </div> 
-           
-    <div id="mobile-navigation">
-        <div class="mobile-nav">
-            <a href="index.html"><li>About</li></a>
-            <a href="tech.html"><li>Skills</li></a>
-            <a id="active-link" href="projects.html"><li>Projects</li></a>
-            <a href="contact.html"><li>Contact</li></a>
+    <!-- The whole body use 3 sections: 1 on left for nav, middle for container and 1 on right same size as nav but blank. For spacing -->
+    <div class="body-page">
+        <div class="outside-containers">
+            <ul class="nav-links">
+                <a href="index.html"><li>About</li></a>
+                <a href="tech.html"><li>Skills</li></a>
+                <a id="active-link" href="projects.html"><li>Projects</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+            </ul>
         </div>
-        <div class="mobile-menu" onclick="toggleMobileMenu()">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-    </div>
- 
-    <div class="container">
-        <section id="projects">
-            <div class="title">
-                <h1>My <span>Projects</span></h1>
-            </div>
 
-            <div class="work">
-                <div class="box-container">
-                    <div class="work-box">
-                        <a href="https://github.com/mardeyar/StatSense" target="_blank" rel="noreferrer noopener">
-                            <p id="title">StatSense</p>
-                        
-                            <div id="card-container">
-                                <p id="lang">Flutter</p>
-                                <p id="proj-info">An app designed to assist NHL fantasy league managers with picking up and dropping players. StatSense
-                                pulls the NHL schedule directly from the public API and gives quick, at a glance information as to how many games each team is playing that week 
-                                and how many of those games fall on days with less than half the total NHL teams playing: 'off days'.</p>
-                                <img id="mobile-project" src="/img/screenshots/statsense.png">    
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="work-box">
-                        <p id="title">Registration & Login Form</p>
-                        <p id="lang"><span>Language: </span>PHP</p>
-                        <p id="proj-info"><span>Description: </span>Using a combination of PHP & HTML/CSS, I designed this sample website to achieve website login and registration functionality by connecting 
-                            with a MySQL database and storing userdata inside the DB.</p>
-                        <a href="https://github.com/mardeyar/login" target="_blank" rel="noreferrer noopener">Git Repo</a>
-                    </div>
-                    <div class="work-box">
-                        <p id="title">Console ATM Machine</p>
-                        <p id="lang"><span>Language: </span>C++</p>
-                        <p id="proj-info"><span>Description: </span>This program is designed to mimic the functionality of an ATM machine where the user can use a few
-                        different functions. Create and account & PIN, login to their account, deposit/withdraw cash and view account balance.</p>
-                        <a href="https://github.com/mardeyar/NSCC-Projects/tree/main/Console%20ATM" target="_blank" rel="noreferrer noopener">Git Repo</a>
-                    </div>
-                    <div class="work-box">
-                        <p id="title">AOSP Calculator</p>
-                        <p id="lang"><span>Language: </span>Java</p>
-                        <p id="proj-info"><span>Description: </span>An assignment done for mobile development, this calculator simply does what a calculator should do. 
-                        Not feature rich though it get's the job done, this was a good practice exercise for making use of layouts in Android Studio and utilizing proper 
-                        documentation with javadocs.</p>
-                        <a href="https://github.com/mardeyar/NSCC-Projects/tree/main/AOSP%20Calculator" target="_blank" rel="noreferrer noopener">Git Repo</a>
-                    </div>
-                    <div class="work-box">
-                        <p id="title">Gravity</p>
-                        <p id="lang"><span>Language: </span>Java</p>
-                        <p id="proj-info"><span>Description: </span>Another mobile development project, this one uses the gravity sensors in an Android device to move balls 
-                        around on a screen by tilting the device. The aim of the game is to tilt the phone towards the moving line along the top of the screen and make the balls 
-                        hit the line. Each collision makes the ball disappear and increments the scoreCount. Tap the screen to add more balls.</p>
-                        <a href="https://github.com/mardeyar/NSCC-Projects/tree/main/Gravity" target="_blank" rel="noreferrer noopener">Git Repo</a>
+        <!-- CONTAINER: All body content, 70% width maxed out at 1536px in case of massive screen -->
+        <div class="container">
+            <section id="projects">
+                <div class="title">
+                    <h1>My <span>Projects</span></h1>
+                    <!-- HIDDEN INITIALLY -->
+                    <div id="mobile-navigation">
+                        <div class="mobile-nav">
+                            <a href="index.html"><li>About</li></a>
+                            <a href="tech.html"><li>Skills</li></a>
+                            <a id="active-link" href="projects.html"><li>Projects</li></a>
+                            <a href="contact.html"><li>Contact</li></a>
+                        </div>
+                        <div class="mobile-menu" onclick="toggleMobileMenu()">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section> 
+
+                <div class="work">
+                    <div class="box-container">
+                    <h2>Tap or click on a project card to view detailed information about each project and its source code</h2>
+                        <div class="work-box">
+                            <a href="https://github.com/mardeyar/StatSense" target="_blank" rel="noreferrer noopener">
+                                <p id="title">StatSense</p>
+                                <div id="card-container">
+                                    <div id="plats">
+                                        <p>Flutter</p>
+                                        <p>Android</p>
+                                        <p>iOS</p>
+                                        <p>Windows</p>
+                                    </div>
+                                    <p id="proj-info">An application designed to assist NHL fantasy league managers with picking up and dropping players. StatSense
+                                    pulls the NHL schedule directly from the public API and gives quick, at a glance information as to how many games each team is playing that week 
+                                    and how many of those games fall on days with less than half the total NHL teams playing: 'off days'.</p>
+                                    <div id="project-sample-img">
+                                        <img id="mobile-project" src="/img/screenshots/statsense.png">
+                                        <img id="mobile-project" src="/img/screenshots/statsense2.png">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="work-box">
+                            <a href="https://github.com/mardeyar/login" target="_blank" rel="noreferrer noopener">
+                                <p id="title">Registration & Login Form</p>
+                                <div id="card-container">
+                                    <div id="plats">
+                                        <p>PHP</p>
+                                        <p>HTML</p>
+                                        <p>CSS</p>
+                                        <p>Web</p>
+                                    </div>
+                                    <p id="proj-info">I designed this sample website to achieve web login and registration by connecting 
+                                        with a MySQL database and storing userdata inside the DB. Proper web practices such as SQL attack prevention and password hashing offer secure
+                                        login and registration functionality, keeping sensitive user information safe.</p>
+                                    <div id="project-sample-img">
+                                        <img id="desktop-project" src="/img/screenshots/login.png">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="work-box">
+                            <a href="https://github.com/mardeyar/NSCC-Projects/tree/main/Console%20ATM" target="_blank" rel="noreferrer noopener">
+                                <p id="title">Console ATM Machine</p>
+                                <div id="card-container">
+                                    <div id="plats">
+                                        <p>C++</p>
+                                        <p>Console</p>
+                                    </div>
+                                    <p id="proj-info">This program is designed to mimic the functionality of an ATM machine where the user can use a few
+                                        different functions. Create an account & PIN, login to their account, deposit/withdraw cash and view account balance. This was done as a 
+                                        school project to make use of core C++ concepts.</p>
+                                    <div id="project-sample-img">
+                                        <img id="desktop-project" src="/img/screenshots/atm.png">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="work-box">
+                            <a href="https://github.com/mardeyar/NSCC-Projects/tree/main/AOSP%20Calculator" target="_blank" rel="noreferrer noopener">
+                                <p id="title">AOSP Calculator</p>
+                                <div id="card-container">
+                                    <div id="plats">
+                                        <p>Java</p>
+                                        <p>Mobile</p>
+                                        <p>Android</p>
+                                    </div>
+                                    <p id="proj-info">An assignment done for mobile development, this calculator simply does what a calculator should do. 
+                                        Not feature rich though it get's the job done, this was a good practice exercise for making use of layouts in Android Studio and utilizing proper 
+                                        documentation with javadocs. Toggles between light/dark mode based on system theme.</p>
+                                    <div id="project-sample-img">
+                                        <img id="mobile-project" src="/img/screenshots/calculator-dark.png">
+                                        <img id="mobile-project" src="/img/screenshots/calculator-light.png">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="work-box">
+                            <a href="https://github.com/mardeyar/NSCC-Projects/tree/main/Gravity" target="_blank" rel="noreferrer noopener">
+                                <p id="title">Gravity</p>
+                                <div id="card-container">
+                                    <div id="plats">
+                                        <p>Java</p>
+                                        <p>Mobile</p>
+                                        <p>AOSP</p>
+                                        <p>Sensors</p>
+                                    </div>
+                                    <p id="proj-info">Another mobile development project, this one uses the gravity sensors in an Android device to move balls 
+                                        around on a screen by tilting the device. The aim of the game is to tilt the phone towards the moving line along the top of the screen and make the balls 
+                                        hit the line. Each collision makes the ball disappear and increments the scoreCount. Tap the screen to add more balls.</p>
+                                    <div id="project-sample-img">
+                                        <img id="mobile-project" src="/img/screenshots/gravity1.png">
+                                        <img id="mobile-project" src="/img/screenshots/gravity.png">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="work-box">
+                            <a href="https://github.com/mardeyar/NSCC-Projects/tree/main/Pokedex" target="_blank" rel="noreferrer noopener">
+                                <p id="title">Pokedex</p>
+                                <div id="card-container">
+                                    <div id="plats">
+                                        <p>Kotlin</p>
+                                        <p>Android</p>
+                                        <p>Compose</p>
+                                        <p>SQLite</p>
+                                    </div>
+                                    <p id="proj-info">This app uses jetpack compose to construct the UI and SQLite to persistently store information about each Pokemon. Tap the expanded
+                                        cards to reveal more information about each Pokemon such as it's Pokedex number, Pokemon type and even the official description about the Pokemon.
+                                        The card color updates dynamically based on the Pokemon type. 
+                                    </p>
+                                    <div id="project-sample-img">
+                                        <img id="mobile-project" src="/img/screenshots/pokedex.png">
+                                        <img id="mobile-project" src="/img/screenshots/pokedex2.png">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </section> 
+        </div>
+        <div class="outside-containers"></div>
+
     </div>
+
+
 
     <div class="footer">
         <p>Mark Deyarmond ©2024</p>        
     </div>
 
    <script defer src="./js/index.js"></script>
-   <script defer src="./js/projects.js"></script>
 </body>
 </html>

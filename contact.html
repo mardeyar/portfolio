@@ -12,54 +12,62 @@
 </head>
 <body>
 
-    <div id="nav">
-        <ul class="nav-links">
-            <a href="index.html"><li>About</li></a>
-            <a href="tech.html"><li>Skills</li></a>
-            <a href="projects.html"><li>Projects</li></a>
-            <a id="active-link" href="contact.html"><li>Contact</li></a>
-        </ul>
+    <div class="body-page">
+        <div class="outside-containers">
+            <!-- NAVIGATION: Desktop first, mobile after. Mobile hidden until 1000px -->
+            <ul class="nav-links">
+                <a href="index.html"><li>About</li></a>
+                <a href="tech.html"><li>Skills</li></a>
+                <a href="projects.html"><li>Projects</li></a>
+                <a id="active-link" href="contact.html"><li>Contact</li></a>
+            </ul>
+        </div>
+
+        <!-- CONTAINER: All body content, 70% width maxed out at 1536px in case of massive screen -->
+        <div class="container">
+            <section id="contact">
+
+                <!-- NAVIGATION: Desktop first, mobile after. Mobile hidden until 1000px -->
+                <div class="title">
+                    <h1>Contact <span>Me</span></h1>
+                    <!-- HIDDEN INITIALLY -->
+                    <div id="mobile-navigation">
+                        <div class="mobile-nav">
+                            <a href="index.html"><li>About</li></a>
+                            <a href="tech.html"><li>Skills</li></a>
+                            <a href="projects.html"><li>Projects</li></a>
+                            <a id="active-link" href="contact.html"><li>Contact</li></a>
+                        </div>
+                        <div class="mobile-menu" onclick="toggleMobileMenu()">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-links">
+                    <a href="https://github.com/mardeyar" target="_blank" rel="noreferrer noopener">
+                    <img id="platform" src="/img/icons/github.png" alt="github.png"><p>I host some of my development projects on GitHub</p></a>
+                </div>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/markdeyarmond" target="_blank" rel="noreferrer noopener">
+                    <img id="platform" src="/img/icons/linkedin.png" alt="linkedin.png"><p>You can find out more about my professional experiences on LinkedIn</p></a>               
+                </div>
+                <div class="contact-links">
+                    <a href="https://www.instagram.com/markdeyarmond/" target="_blank" rel="noreferrer noopener">
+                    <img id="platform" src="/img/icons/instagram.png" alt="instagram.png"><p>You can also find me on Instagram</p></a>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:techdevmd@gmail.com">
+                    <img id="platform" src="/img/icons/email.png" alt="email.png"><p>Of course, I can always be reached via tried and trusted email</p></a>
+                </div>
+                <p id="contact-statement">Please reach out if you need some development assistance.<br>Get in touch and let's bring your ideas to life</p>    
+            </section>
+        </div>
+        <div class="outside-containers"></div>
     </div>
 
-    <div id="mobile-navigation">
-        <div class="mobile-nav">
-            <a href="index.html"><li>About</li></a>
-            <a href="tech.html"><li>Skills</li></a>
-            <a href="projects.html"><li>Projects</li></a>
-            <a id="active-link" href="contact.html"><li>Contact</li></a>
-        </div>
-        <div class="mobile-menu" onclick="toggleMobileMenu()">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-    </div>
-
-    <div class="container">
-        <section id="contact">
-            <div class="title">
-                <h1>Contact <span>Me</span></h1>
-            </div>
-            
-            <div class="contact-links">
-                <a href="https://github.com/mardeyar" target="_blank" rel="noreferrer noopener">
-                <img id="platform" src="/img/icons/github.png" alt="github.png"><p>I host some of my development projects on GitHub</p></a>
-            </div>
-            <div class="contact-links">
-                <a href="https://www.linkedin.com/in/markdeyarmond" target="_blank" rel="noreferrer noopener">
-                <img id="platform" src="/img/icons/linkedin.png" alt="linkedin.png"><p>You can find out more about my professional experiences on LinkedIn</p></a>               
-            </div>
-            <div class="contact-links">
-                <a href="https://www.instagram.com/markdeyarmond/" target="_blank" rel="noreferrer noopener">
-                <img id="platform" src="/img/icons/instagram.png" alt="instagram.png"><p>You can also find me on Instagram</p></a>
-            </div>
-            <div class="contact-links">
-                <a href="mailto:techdevmd@gmail.com">
-                <img id="platform" src="/img/icons/email.png" alt="email.png"><p>Of course, I can always be reached via tried and trusted email</p></a>
-            </div>
-            <p id="contact-statement">Please reach out if you need some development assistance.<br>Get in touch and let's bring your ideas to life</p>    
-        </section>
-    </div>
 
     <div class="footer">
         <p>Mark Deyarmond ©2024</p>        

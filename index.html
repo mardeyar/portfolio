@@ -12,57 +12,65 @@
 </head>
 <body>
 
-    <div id="nav">
-        <ul class="nav-links">
-            <a id="active-link" href="index.html"><li>About</li></a>
-            <a href="tech.html"><li>Skills</li></a>
-            <a href="projects.html"><li>Projects</li></a>
-            <a href="contact.html"><li>Contact</li></a>
-        </ul>
-    </div>
-
-    <div id="mobile-navigation">
-        <div class="mobile-nav">
-            <a id="active-link" href="index.html"><li>About</li></a>
-            <a href="tech.html"><li>Skills</li></a>
-            <a href="projects.html"><li>Projects</li></a>
-            <a href="contact.html"><li>Contact</li></a>
+    <!-- The whole body use 3 sections: 1 on left for nav, middle for container and 1 on right same size as nav but blank. For spacing -->
+    <div class="body-page">
+        <div class="outside-containers">
+        <!-- NAVIGATION: Desktop first, mobile after. Mobile hidden until 1000px -->
+            <ul class="nav-links">
+                <a id="active-link" href="index.html"><li>About</li></a>
+                <a href="tech.html"><li>Skills</li></a>
+                <a href="projects.html"><li>Projects</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+            </ul>
         </div>
-        <div class="mobile-menu" onclick="toggleMobileMenu()">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-    </div>
 
-    <div class="container">
-        <section id="index">
-            <div class="title">
-                <h1>About <span>Me</span></h1>
-            </div>
-
-            <div class="about-body">
-                <div class="profile">
-                    <img id="md" src="./img/profile/profile-md1.png" alt="md.png">
-                </div>
-                <div class="profile-body">
-                    <div class="name-title">
-                        <p id="name">Mark Deyarmond</p>
-                        <p id="desc">Web & Software Developer</p>
-                        <p id="origin">Halifax, NS</p>
+        <!-- CONTAINER: All body content, 70% width maxed out at 1536px in case of massive screen -->
+        <div class="container">
+            <section id="index">
+                <div class="title">
+                    <h1>About <span>Me</span></h1>
+                    <!-- HIDDEN INITIALLY -->
+                    <div id="mobile-navigation">
+                        <div class="mobile-nav">
+                            <a id="active-link" href="index.html"><li>About</li></a>
+                            <a href="tech.html"><li>Skills</li></a>
+                            <a href="projects.html"><li>Projects</li></a>
+                            <a href="contact.html"><li>Contact</li></a>
+                        </div>
+                        <div class="mobile-menu" onclick="toggleMobileMenu()">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
                     </div>
-
-                    <div class="wall">
-                        <p id="top">Born and raised on the East Coast of Canada, I took an early interest in computers at a young age. In my early 30's, I made a career switch from
-                            retail to programming. During my studies at NSCC, I discovered my passion for working with both front end and back end systems. This fueled my committment
-                             to mastering the connection between user interface design and the underlying code structure that powers seamless functionality.<br><br>I possess a versatile 
-                             skillset that spans various programming languages and frameworks. I am committed to turning simple concepts into functional realities using clean UI 
-                             designs and elegant coding solutions.</p>
-                        <p id="bottom">Explore my portfolio to see what I have to offer. My code is designed to provide solutions to your problems.</p>
-                    </div>  
                 </div>
-            </div>
-        </section>
+
+                <div class="about-body">
+                    <div class="profile">
+                        <img id="md" src="./img/profile/profile-md1.png" alt="md.png">
+                    </div>
+                    <div class="profile-body">
+                        <div class="name-title">
+                            <p id="name">Mark Deyarmond</p>
+                            <p id="desc">Web & Software Developer</p>
+                            <p id="origin">Halifax, NS</p>
+                        </div>
+
+                        <div class="wall">
+                            <p id="top">Born and raised on the East Coast of Canada, I took an early interest in computers at a young age. In my early 30's, I made a career switch from
+                                retail to programming. During my studies at NSCC, I discovered my passion for working with both front end and back end systems. This fueled my committment
+                                to mastering the connection between user interface design and the underlying code structure that powers seamless functionality.<br><br>I possess a versatile 
+                                skillset that spans various programming languages and frameworks. I am committed to turning simple concepts into functional realities using clean UI 
+                                designs and elegant coding solutions.</p>
+                            <p id="bottom">Explore my portfolio to see what I have to offer. My code is designed to provide solutions to your problems.</p>
+                        </div>  
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Lastly, the empty div to match nav -->
+        <div class="outside-containers"></div>
     </div>
 
     <div class="footer">

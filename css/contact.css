@@ -39,13 +39,29 @@
     margin-bottom: 0;
 }
 
+/* TABLET SIZING */
+@media screen and (max-width: 811px) {
+    .contact-links p {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    #platform {
+        width: 50px;
+        height: 50px;
+    }
+
+    #contact-statement {
+        font-size: 1.2rem;
+    }
+}
+
 /* MOBILE SIZING */
 @media screen and (max-width: 500px) {
     #contact {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
-        height: 85vh;
     }
 
     #platform {
@@ -59,9 +75,8 @@
     }
 
     #contact-statement {
-        margin-top: 20px;
         font-size: .85rem;
         line-height: 25px;
-        padding-top: 90px;
+        padding-top: 30px;
     }
 }

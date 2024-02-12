@@ -5,7 +5,6 @@
     justify-content: flex-start;
     height: 100%;
     margin: 30px;
-    position: relative;
 }
 
 .info {
@@ -18,8 +17,9 @@
 .about-body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-top: 20px;
-    position: relative;
+    /* position: relative; */
     border: 1px solid rgb(150, 150, 150);
     width: 100%;
 }
@@ -53,14 +53,14 @@
 }
 
 .name-title {
-    margin: 70px 10px 70px 3.2vw;
-    width: 805px;
-    padding-right: 10px;
+    padding: 20px;
+    margin: 70px 10px 70px 1.3vw;
+    width: 35%;
 }
 
 #name {
     font-family: 'Lato', sans-serif;
-    font-size: 48px;
+    font-size: 3rem;
     margin-bottom: 10px;
     font-weight: 900;
     color: rgb(17, 17, 17);
@@ -68,7 +68,7 @@
 
 #desc {
     font-family: 'Quicksand', sans-serif;
-    font-size: 32px;
+    font-size: 1.7rem;
     color: rgb(17, 17, 17);
     margin-top: 0;
     margin-bottom: 0;
@@ -89,7 +89,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 60%;
     padding: 80px 20px 50px 0;
     /* padding-right: 20px; */
 }
@@ -108,6 +108,17 @@
     width: 100%;
 }
 
+@media screen and (max-width: 1620px) {
+    #name {
+        font-size: 2.1rem;
+    }
+
+    #desc {
+        font-size: 1.4rem;
+        letter-spacing: 0;
+    }
+}
+
 /* MOBILE SIZING */
 @media screen and (max-width: 1250px) {
     .profile-body {
@@ -119,8 +130,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
         width: 100%;
-        margin-bottom: 5px;
+        padding: 0;
+        margin: 100px 0 0 0;
     }
 
     #name {
@@ -183,7 +196,7 @@
 
     #desc {
         text-align: center;
-        font-size: 26px;
+        padding: 0 10px;
     }
 
     #index {

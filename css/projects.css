@@ -11,29 +11,39 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 20px;
+}
+
+h2 {
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    margin: 2px auto;
+    text-align: center;
+    width: 80%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
 }
 
 .box-container {
     display: flex;
     flex-direction: column;
-    /* align-items: center;
-    justify-content: center; */
     width: 100%;
 }
 
 .work-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
+    margin: 10px auto;
     border: 1px solid #726d6d;
     background-color: #c5c5c5;
-    width: 50%;
+    /* width: 85%; */
     height: 20%;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.25);
     border-radius: 4px;
+    transition: transform 0.2s ease;
+}
+
+.work-box:hover {
+    transform: scale(1.05);
 }
 
 .work-box a {
@@ -53,51 +63,71 @@
 }
 
 #mobile-project {
-    height: 20rem;
-    width: 10rem;
+    height: 23rem;
+    width: 12rem;
+}
+
+#desktop-project {
+    width: 30rem;
+    height: 25rem;
 }
 
 #title {
     margin: 0 auto;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
-    padding: 10px;
-    border-bottom: 3px solid black;
-    width: 80%;
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    background-color: #726d6d4d;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.349);
 }
 
-#lang {
+#plats {
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto;
+}
+
+#plats p {
     font-family: 'Segoe UI', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     color: #2B839F;
     font-weight: 600;
-}
-
-#lang span {
-    color: rgb(46, 46, 46);
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 20px;
+    padding: 10px;
+    margin: 20px 5px;
+    text-align: center;
+    background-color: #928b8b83;
+    border-radius: 8px;
+    border: 1px solid #ccc9c994;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.486);
+    width: 80px;
 }
 
 #proj-info {
-    display: flex;
-    flex-direction: row;
+    text-align: center;
     font-family: 'Segoe UI', sans-serif;
-    font-size: 13px;
-    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    width: 65%;
+    margin: 0 auto;
     color: rgb(31, 31, 31);
 }
 
-#proj-info span {
-    font-weight: 600;
-    color: #2B839F;
+#project-sample-img {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
 }
 
 @media screen and (max-width: 811px) {
     .work-box {
-        width: 80%;
+        width: 100%;
+    }
+
+    .work-box:hover {
+        transform: none;
     }
 
     .expand {
@@ -111,7 +141,6 @@
 
     #title {
         font-size: 18px;
-        margin-top: 36px;
     }
     
     #lang {
@@ -119,28 +148,84 @@
     }
     
     #proj-info {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .work-box a {
         font-size: 16px;
     }
+
+    #mobile-project {
+        height: 17rem;
+        width: 9rem;
+    }
+
+    #card-container {
+        padding: 0 10px;
+    }
+
+    #plats {
+        margin: 0 auto;
+    }
+
+    #plats p {
+        width: 60px;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 500px) {
+    h2 {
+        font-size: 14px;
+    }
+
     #projects {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
 
-    #title {
-        margin-top: 18px;
-        font-size: 14px;
+    #proj-info {
+        width: 100%;
     }
 
-    .expand {
-        font-size: 11px;
-        margin: 10px 0;
+    #title {
+        font-size: 22px;
+    }
+
+    #plats {
+        margin: 0 auto;
+    }
+
+    #plats p {
+        font-size: 12px;
+        width: 50px;
+    }
+    
+    #desktop-project {
+        width: 17rem;
+        height: 14rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    #plats p {
+        font-size: 10px;
+        width: 40px;
+    }
+
+    #mobile-project {
+        height: 12rem;
+        width: 7rem;
+    }
+
+    #desktop-project {
+        width: 13rem;
+        height: 10rem;
     }
 }
