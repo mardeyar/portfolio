@@ -50,6 +50,11 @@ body {
     padding-bottom: 5px;
 }
 
+.nav-links a:hover {
+    border-bottom: 2px solid transparent;
+    transition: fade .3s;
+}
+
 #active-link {
     /* border-bottom: 3px solid #454545; */
     color: rgb(20, 132, 197);
@@ -174,6 +179,15 @@ body {
 #soc-logo {
     width: 30px;
     height: 30px;
+}
+
+#footer-sep {
+    border: 1px solid rgba(170, 170, 170, 0.5);
+    width: 25%;
+}
+
+#refresh {
+    font-size: 12px;
 }
 
 @media screen and (max-width: 1250px) {
