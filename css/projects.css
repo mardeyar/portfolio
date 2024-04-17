@@ -35,7 +35,6 @@ h2 {
     margin: 10px auto;
     border: 1px solid #726d6d;
     background-color: #c5c5c5;
-    /* width: 85%; */
     height: 20%;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.25);
     border-radius: 4px;
@@ -43,7 +42,7 @@ h2 {
 }
 
 .work-box:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 
 .work-box a {
@@ -98,10 +97,9 @@ h2 {
     padding: 10px;
     margin: 20px 5px;
     text-align: center;
-    background-color: #928b8b83;
+    background-color: #ada5a580;
     border-radius: 8px;
-    border: 1px solid #ccc9c994;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.486);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.35);
     width: 80px;
 }
 
